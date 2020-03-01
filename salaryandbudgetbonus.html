@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this web page has been created to meet the requirements of NSCC's CITC 1300 course -->
+<!-- Assignment -->
+<!-- File Name -->
+
+<head>
+	<title>Salary and Budget</title>
+	<meta charset="utf-8">
+	<meta name= "author" content= "firstname lastname">
+	<meta name= "robots" content= "noindex, nofollow">	
+</head>
+
+<script language ="javascript" type="text/javascript">
+document.write("<h4>Last Modified on: "+document.lastModified+"</h4>");
+
+function calculateFunc() { 
+
+var sales = document.getElementById("sales").value;
+
+var commission = parseFloat(sales)*(6/100);
+
+var txtcommision = document.getElementById('commission');
+txtcommision.value=commission.toFixed(2);
+
+var grosspay = 900 + parseFloat(commission);
+
+var txtgrosspay = document.getElementById('grosspay');
+txtgrosspay.value=grosspay.toFixed(2);
+
+var deduction = parseFloat(grosspay)*(18/100);
+
+var txtdeduction = document.getElementById('deduction');
+txtdeduction.value=deduction.toFixed(2);
+
+var netpay = parseFloat(grosspay) - parseFloat(deduction);
+var txtnetpay = document.getElementById('netpay');
+txtnetpay.value=netpay.toFixed(2);
+
+var housing = parseFloat(netpay)*(45/100);
+var txthousing = document.getElementById('housing');
+txthousing.value=housing.toFixed(2);
+
+var food = parseFloat(netpay)*(20/100);
+var txtfood = document.getElementById('food');
+txtfood.value=food.toFixed(2);
+
+var entertainment = parseFloat(netpay)*(25/100);
+var txtentertainment = document.getElementById('entertainment');
+txtentertainment.value=entertainment.toFixed(2);
+
+
+var miscellaneous = parseFloat(netpay)*(10/100);
+var txtmiscellaneouse = document.getElementById('miscellaneous');
+txtmiscellaneouse.value=miscellaneous.toFixed(2);
+}
+
+</script>
+
+<style>
+
+
+#container{
+	width:620px; 
+	padding:40px; 
+	margin:auto; 
+}
+#table{
+	width:600px; 
+	padding:40px; 
+	margin:auto; 
+	border: double .3em;  
+    border-color: red;
+}
+h2 {
+	font-family: "Comic Sans MS"
+}
+td {
+	font-family: "trebuchet MS";
+    font-weight: bold;
+    font-size: 115%
+}
+</style>
+
+
+<div id='container'>
+
+<h2>Salary &#38; Budget</h2>
+<div id='table'>
+
+<form name='salary' method='POST' action='#'>
+
+<table>
+
+<tr>  
+	<td>Name:</td>	
+	<td><input type='text' name='name' value=''></td>
+</tr>
+
+<tr>  
+	<td>Sales:</td>	
+	<td><input type='text' id='sales' name='sales' value=''></td>
+</tr>
+
+<tr>  <td>&nbsp;</td></tr>
+
+<tr>  
+ 	<td>Commission:</td>	
+	<td><input type='text' readonly="true" id='commission' name='commission' value=''></td>
+	<td>Housing and Utilities:</td>	
+	<td><input type='text' readonly="true" id='housing' name='housing' value=''></td>
+</tr>
+
+<tr>  
+	<td>Gross Pay:</td>	
+	<td><input type='text' readonly="true" id='grosspay' name='grosspay' value=''></td>
+	<td>Food & Clothing:</td>	
+	<td><input type='text' readonly="true" id='food' name='food' value=''></td>
+</tr>
+
+<tr>  
+	<td>Deduction:</td>	
+	<td><input type='text' readonly="true" id='deduction' name='deduction' value='' /></td>
+	<td>Entertainment:</td>	
+	<td><input type='text' readonly="true" id='entertainment' name='entertainment' value='' /></td>
+</tr>
+
+<tr>  
+	<td>Net Pay:</td>	
+	<td><input type='text' readonly="true" id='netpay' name='netpay' value='' /></td>
+	<td>Miscellaneous:</td>	
+	<td><input type='text' readonly="true" id='miscellaneous' name='miscellaneous' value='' /></td>
+</tr>
+
+<tr>  
+	<td>&nbsp;</td>
+	<td style='text-align:center;'><input type='button' value='Calculate'  onclick="calculateFunc()"  name='submit' /></td>
+	<td>&nbsp;</td>	
+	<td style='text-align:center;'><input type='reset' name='reset' value='Clear' /></td></tr>
+
+</table>
+</form>
+</div> 
+</div> 
+</html>

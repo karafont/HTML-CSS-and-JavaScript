@@ -1,0 +1,19 @@
+body {
+    background-color: bisque;
+    line-height: 200%;
+    font-family: tahoma;
+    font-size: 22px;
+}
+td {
+    color: navy;
+    font-weight: bold;
+}
+
+#container {
+    max-width: 450px;
+    margin: 0 auto
+}
+
+.longtext {
+    white-space: nowrap;
+}

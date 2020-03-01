@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this web page has been created to meet the requirements of NSCC's CITC 1300 course -->
+<!-- Assignment -->
+<!-- File Name -->
+
+<head>
+    <title>Tip Calculator</title>
+    <meta charset="utf-8">
+    <meta name="author" content="firstname lastname">
+    <meta name="robots" content="noindex, nofollow">
+</head>
+
+<body>
+    <style>
+        form {
+            font-weight: bold;
+            font-family: arial;
+            line-height: 200%
+        }
+        .button {
+            font-style: italic;
+            font-family: arial;
+            font-size: 14px
+        }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+        document.write("<h4>Last Modified on: " + document.lastModified + "</h4>");
+
+        function calculateFunc() {
+            var bill = Number(document.getElementById('bill').value);
+            var tip1 = bill * .15;
+            var total_bill1 = bill + tip1;
+            var tip2 = bill * .25;
+            var total_bill2 = bill + tip2;
+
+            document.getElementById("tip1").value = "$" + Number(tip1).toFixed(2);
+            document.getElementById("tip2").value = "$" + Number(tip2).toFixed(2);
+            document.getElementById("total1").value = "$" + Number(total_bill1).toFixed(2);
+            document.getElementById("total2").value = "$" + Number(total_bill2).toFixed(2);
+        }
+    </script>
+
+    <header>
+        <h3>Tip Calculator</h3>
+    </header>
+
+    <main>
+
+        <form>
+
+            <tr> 
+                <td>How much did you pay for dinner? <input id="bill" type="text"></td>
+            </tr>
+            <br>
+            <tr>
+                <td> <button type="button" name="submit" class="button" value="Calculate" onclick="calculateFunc()">Calculate</button> </td>
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <td>Amount of 15% tip: <input type='text' readonly="true" id='tip1' name='tip1' value=''></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Amount of 25% tip: <input type='text' readonly="true" id='tip2' name='tip2' value=''></td>
+            </tr>
+            <br>
+            <br>
+            <tr>
+                <td>Dinner total + 15% tip: <input type='text' readonly="true" id='total1' name='total1' value=''></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Dinner total + 25% tip: <input type='text' readonly="true" id='total2' name='total2' value=''></td>
+            </tr>
+            <br>
+            <tr>
+                <td><button type="reset" name="reset" class="button" value="reset">Erase Form</button></td>
+            </tr>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

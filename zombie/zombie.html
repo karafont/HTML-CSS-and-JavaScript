@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this web page has been created to meet the requirements of NSCC's CITC 1300 course -->
+<!-- Assignment -->
+<!-- File Name -->
+
+<head>
+	<title>Zombie Shopping</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="beyond14.css">
+	<meta name= "author" content= "firstname lastname">
+	<meta name= "robots" content= "noindex, nofollow">	
+</head>	
+
+<body id="container">
+
+<script language ="javascript" type="text/javascript">
+	document.write("<h4>Last Modified on: "+document.lastModified+"</h4>");
+
+function calculateFunc() { 
+
+var book = document.getElementById('bookchoice').value
+var book = parseFloat(book)
+
+var gun = document.getElementById("gunchoice").value;
+var gun = parseFloat(gun)
+
+var tax = gun * 7/100 + book * 7/100
+
+var total = gun + tax + book
+
+var txtgun = document.getElementById('guntxt');
+txtgun.value=gun.toFixed(2);
+
+var txtbook = document.getElementById('booktxt');
+txtbook.value=book.toFixed(2);
+
+var txttax = document.getElementById('taxtxt');
+txttax.value=tax.toFixed(2);
+
+var txttotal = document.getElementById('totaltxt');
+txttotal.value=total.toFixed(2);
+}
+</script>
+
+<header><img src="zombie_shopping.gif" alt="Zombie Shopping" title="Zombie Shopping"></header>
+
+<main>
+
+<table>
+<form>
+
+<tr>
+    <td class="longtext">Select Your Favorite Zombie Book:</td>
+</tr>
+
+<br>
+
+<tr>
+<td style="text-align:center;">
+    <select id="bookchoice">
+    <option id="book" value=14.50>Cell($14.50)</option>
+    <option id="book" value=15.50>Living Dead, The($15.50)</option>
+    <option id="book" value=17.00>Monster Island($17.00)</option>
+    <option id="book" value=19.50>Plague of the Dead($19.50)</option>
+    <option id="book" value=9.50>World War Z($9.50)</option>
+</select>
+</td>
+</tr>
+
+<tr>
+    <td class="longtext"> Select Gun Needed to Dispatch Zombies:</td>
+</tr>
+
+<br>
+
+<tr>
+<td style="text-align:center;">
+    <select id="gunchoice">
+    <option id="gun" value=1000.00>AR-15 ($1000.00)</option>
+    <option id="gun" value=599.99>Glock ($599.99)</option>
+    <option id="gun" value=600.00>Smith & Wesson ($600.00)</option>
+    <option id="gun" value=370.00>Remington 870 ($370.00)</option>
+</select>
+</td>
+</tr>
+
+<tr>
+    <td style="text-align:center;"><input type="button" onclick="calculateFunc()" name="Calculate 
+    Purchases" value="Calculate Purchases"></td>
+</tr>
+
+</form>
+</table>
+
+<table style="width: 451px">
+<form>
+<tr>
+    <td>Book Cost:</td>
+    <td style="width: 130px"></td>
+    <td><input id="booktxt" type="text" readonly="true" value=""></td>
+</tr>
+
+<tr>
+    <td>Gun Cost:</td>
+    <td style="width: 130px"></td>
+    <td><input type="text" id="guntxt" type="text" readonly="true" value=""></td>
+</tr>
+
+<tr>
+    <td>7% Tax:</td>
+    <td style="width: 130px"></td>
+    <td><input type="text" id="taxtxt" readonly="true" value=""></td>
+</tr>
+
+<tr>
+    <td>Total Cost:</td>
+    <td style="width: 130px"></td>
+    <td><input type="text" id="totaltxt" readonly="true" value=""></td>
+</tr>
+
+<tr>
+    <td colspan="3" style="text-align:center;"><input type="reset" name="Erase Me!"></td>
+</tr>
+
+</table>
+</form>
+</main>
+</body>
+</html>

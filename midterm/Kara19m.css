@@ -1,0 +1,39 @@
+
+header {background-position: 50% 50%; 
+    background-image: url(yankeepuzzle.jpg);
+    background-size: 10% auto;
+    height: 110px;
+    width: 100%;
+    clear: both;
+    background-repeat: repeat-x; 
+    margin-top: 120px;
+    text-align:center}
+
+body {background-color: bisque;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 1em;
+      line-height: 200%;}
+
+p {text-indent: 2em;}
+
+dt {font-weight: bold;
+    font-variant: small-caps;}
+
+dd {line-height:150%}
+
+ol > ul {list-style-type: lower-alpha;}
+
+hr {border: 1px dashed;
+    border-color: #591d37;
+    width: 55%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    clear: both;}
+
+h1, h2, h3, h4, h5, h6 {color:#ff823b}
+
+footer {text-align:center}
+
+nav {text-align:center}
+

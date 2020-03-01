@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this web page has been created to meet the requirements of NSCC's CITC 1300 course -->
+<!-- Assignment -->
+<!-- File Name -->
+
+<head>
+    <title> </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="chap9.css">
+    <meta name="author" content="firstname lastname">
+    <meta name="robots" content="noindex, nofollow">
+</head>
+
+<body>
+
+    <script language="javascript" type="text/javascript">
+        document.write("<h4>Last Modified on: " + document.lastModified + "</h4>");
+    </script>
+
+    <main>
+        <form method="post" action="http://ww2.nscc.edu/lenox_m/php1300/demo.php">
+
+            <fieldset>
+
+                <Legend>Just the Facts</Legend>
+
+                <label for="date">Select a Date:</label>
+                <input type="date" name="date" id="date">
+
+                <br>
+
+                <label for="fname">First:</label>
+                <input type="text" name="fname" id="fname">
+
+                <br>
+
+                <label for="lname">Last:</label>
+                <input type="text" name="lname" id="lname">
+
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" size="50" required>
+
+                <br>
+
+                <label for="mobile"># of Mobile Devices:</label>
+                <input type="number" name="mobile" id="mobile" min="0">
+
+                <br>
+                
+                <button type="submit" name="submit" id="submit" value="submit">Submit Data!</button> 
+                
+                <button type="reset" name="reset" id="reset" value="reset">Dump Data!</button>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

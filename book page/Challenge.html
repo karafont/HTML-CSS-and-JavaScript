@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this web page has been created to meet the requirements of NSCC's CITC 1300 course -->
+<!-- Beyond 14 Challenge -->
+<!-- challenge.html -->
+
+<head>
+	<title>Order</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bookCSS.css">
+	<meta name= "author" content= "firstname lastname">
+    <meta name= "robots" content= "noindex, nofollow">	
+</head>	
+
+<body onload="dynamicDate()">
+
+<script language ="javascript" type="text/javascript" src="bookJava.js"></script>
+
+<main>
+
+<table>
+<form>
+
+<tr>
+    <th id="cover">Cover</th>
+    <th id="title">Title</th>
+    <th id="product">Product Type</th>
+    <th id="quantity">Quantity</th>
+    <th id="unitPrice">Unit Price</th>
+    <th id="totalPrice">Total Price</th>
+</tr>
+
+<tr>
+    <td headers="cover"><img src = "bookwoman.jpg" alt = '"... A story of hope and heartbreak, raw courage and strength ..."' title = '"... A story of hope and heartbreak, raw courage and strength ..."'></td>
+    <td headers="title"><input type="text" class="titleExtraLong" readonly =true value ="Book Woman of Troublesome Creek"></td>
+    <td headers="product">
+        <select>
+            <option selected>Audio</option>
+            <option>Deck</option>
+            <option>Fiction</option>
+            <option>Music</option>
+            <option>Non-Fiction</option>
+            <option>Puzzle</option>
+            <option>Reference</option>
+        </select>
+    </td>
+    <td headers="quantity"><input type="text" id="quantity1" value=""></td>
+    <td headers="unitPrice"><input type="text" id="unitPrice1" readonly =true value =15.50></td>
+    <td headers="totalPrice"><input type="text" id="totalUnitPrice1" readonly =true value =""></td>
+</tr>
+
+<tr>
+    <td headers="cover"><img src = "dispatcher.jpg" alt='"... Dispatchers are not always welcome ..."' title='"... Dispatchers are not always welcome ..."'></td>
+    <td headers="title"><input type="text" class="title" readonly =true value ="The Dispatcher"></td>
+    <td headers="product">
+        <select>
+            <option selected>Audio</option>
+            <option>Deck</option>
+            <option>Fiction</option>
+            <option>Music</option>
+            <option>Non-Fiction</option>
+            <option>Puzzle</option>
+            <option>Reference</option>
+        </select>
+    </td>
+    <td headers="quantity"><input type="text" id="quantity2" value=""></td>
+    <td headers="unitPrice"><input type="text" id="unitPrice2" readonly =true value ="12.50"></td>
+    <td headers="totalPrice"><input type="text" id="totalUnitPrice2" readonly =true value =""></td>
+</tr>
+
+<tr>
+    <td headers="cover"><img src="dreamsofgaia.jpg" alt='"... To seek, to feel, to grow, to heal ..."' title='"... To seek, to feel, to grow, to heal ..."'></td>
+    <td headers="title"><input type="text" class="title" readonly =true value ="Dreams of Gaia"></td>
+    <td headers="product">
+        <select>
+            <option>Audio</option>
+            <option selected>Deck</option>
+            <option>Fiction</option>
+            <option>Music</option>
+            <option>Non-Fiction</option>
+            <option>Puzzle</option>
+            <option>Reference</option>
+        </select>
+    </td>
+    <td headers="quantity"><input type="text" id="quantity3" value=""></td>
+    <td headers="unitPrice"><input type="text" id="unitPrice3" readonly =true value ="24.99"></td>
+    <td headers="totalPrice"><input type="text" id="totalUnitPrice3" readonly =true value =""></td>
+</tr>
+
+<tr>
+    <td headers="cover"><img src="golden.jpg" alt='"... In Death series, book #50 ..."' title='"... In Death series, book #50 ..."'></td>
+    <td headers="title"><input type="text" class="title" readonly =true value ="Golden in Death"></td>
+    <td headers="product">
+        <select>
+            <option>Audio</option>
+            <option>Deck</option>
+            <option selected>Fiction</option>
+            <option>Music</option>
+            <option>Non-Fiction</option>
+            <option>Puzzle</option>
+            <option>Reference</option>
+        </select>
+    </td>
+    <td headers="quantity"><input type="text" id="quantity4" value=""></td>
+    <td headers="unitPrice"><input type="text" id="unitPrice4" readonly =true value ="22.50"></td>
+    <td headers="totalPrice"><input type="text" id="totalUnitPrice4" readonly =true value =""></td>
+</tr>
+
+<tr>
+    <td headers="cover"><img src="jefferson.jpg" alt='"... From the 40s to the Early 70s ..."' title='"... From the 40s to the Early 70s ..."'> </td>
+    <td headers="title"><input type="text" class="titleLong" readonly =true value ="A Walk Down Historic Jefferson"></td>
+    <td headers="product">
+        <select>
+            <option>Audio</option>
+            <option>Deck</option>
+            <option>Fiction</option>
+            <option>Music</option>
+            <option>Non-Fiction</option>
+            <option>Puzzle</option>
+            <option selected>Reference</option>
+        </select>
+    </td>
+    <td headers="quantity"><input type="text" id="quantity5" value=""></td>
+    <td headers="unitPrice"><input type="text" id="unitPrice5" readonly =true value ="13.50"></td>
+    <td headers="totalPrice"><input type="text" id="totalUnitPrice5" readonly =true value =""></td>
+</tr>
+
+<tr>
+    <td headers="cover"><img src ="millenium.jpg" alt='"...Can evoke joyous memories of home, or spark conversations of past good times ..."' title='"...Can evoke joyous memories of home, or spark conversations of past good times ..."'></td>
+    <td headers="title"><input type="text" class="title" readonly =true value ="The New Millenium"></td>
+    <td headers="product">
+        <select>
+            <option>Audio</option>
+            <option>Deck</option>
+            <option>Fiction</option>
+            <option>Music</option>
+            <option>Non-Fiction</option>
+            <option selected>Puzzle</option>
+            <option>Reference</option>
+        </select>
+    </td>
+    <td headers="quantity"><input type="text" id="quantity6" value=""></td>
+    <td headers="unitPrice"><input type="text" id="unitPrice6" readonly =true value ="18.95"></td>
+    <td headers="totalPrice"><input type="text" id="totalUnitPrice6" readonly =true value =""></td>
+</tr>
+
+<tr>
+    <td headers="cover"><img src='sourcebook.jpg' alt='"... From cultures around the world ..."'title='"... From cultures around the world ..."'></td>
+    <td headers="title"><input type="text" class="titleLong" readonly =true value ="Signs & Symbols Sourcebook"></td>
+    <td headers="product">
+        <select>
+            <option>Audio</option>
+            <option>Deck</option>
+            <option>Fiction</option>
+            <option>Music</option>
+            <option>Non-Fiction</option>
+            <option>Puzzle</option>
+            <option selected>Reference</option>
+        </select>
+    </td>
+    <td headers="quantity"><input type="text" id="quantity7" value=""></td>
+    <td headers="unitPrice"><input type="text" id="unitPrice7" readonly =true value ="34.95"></td>
+    <td headers="totalPrice"><input type="text" id="totalUnitPrice7" readonly =true value =""></td>
+</tr>
+
+<tr>
+    <td class="thin">
+        TN County:
+        <select id="taxRate">
+            <option value=9.25>Anderson</option>
+            <option value=8.75>Cannon</option>
+            <option value=9.50>Fayette</option>
+            <option value=8>Johnson</option>
+            <option value=9.75>Williamson</option>
+        </select>
+    </td>
+    <td colspan=3 class="thinRight" id="orderDate"></td>
+    <td class="thinRight">Sub-total:</td>
+    <td class="thin"><input type="text" id="subTotal" readonly =true value =""></td>
+</tr>
+
+<tr>
+    <td colspan=4 class="thin"></td>
+    <td class="thinRight">S & H:</td>
+    <td class="thin"><input type="text" id="shipFee" readonly =true value =""></td>
+</tr>
+
+<tr>
+    <td colspan=4 class="thin"></td>
+    <td class="thinRight">Tax:</td>
+    <td class="thin"><input type="text" id="taxTotal" readonly =true value =""></td>
+</tr>
+
+<tr>
+    <td colspan=4 class="thin"></td>
+    <td class="thinRight">Grand Total:</td>
+    <td class="thin"><input type="text" id="grandTotal" readonly =true value =""></td>
+</tr>
+
+<tr>
+    <td colspan=6 class="thin"><input type=button onClick="calculateEverthing()"></td>
+</tr>
+
+<tr>
+    <td colspan=6 class="thin"><input type=reset value=""></td>
+</tr>
+
+</table>
+</form>
+</main>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this web page has been created to meet the requirements of NSCC's CITC 1300 course -->
+<!-- Assignment -->
+<!-- File Name -->
+
+<head>
+    <title>Ugly Table</title>
+    <meta charset="utf-8">
+    <meta name="author" content="firstname lastname">
+    <meta name="robots" content="noindex, nofollow">
+
+    <style>
+        body {
+            display: table;
+            vertical-align: top;
+            margin: auto;}
+
+        #table {
+            border: 1px;
+            text-align: center;
+            font-family: verdana;
+            width: 300px
+        }
+
+        #titansrock {
+            font-size: x-large;
+            font-variant: small-caps;
+            width: 100%;
+            height: 20%;
+            background-color: rgb(0, 41, 91);
+            padding: none;
+            color: #4095D1;
+        }
+
+        #bigblue {
+            background-color: red;
+            color: #002B82;
+            height: 60%;
+            width: 33%;
+            padding: none;
+            word-spacing: 100vw;
+            vertical-align: bottom
+        }
+
+
+        #guitar {
+            background: #da2128;
+            background: -moz-linear-gradient(top, #da2128 0%, #9900ff 100%);
+            background: -webkit-linear-gradient(top, #da2128 0%, #9900ff 100%);
+            background: linear-gradient(to bottom, #da2128 0%, #9900ff 100%);
+            padding: none;
+            height: 40%;
+            width: 33%
+        }
+
+        #vandy {
+            background-color: grey;
+            background-size: cover;
+            color: white;
+            padding: none;
+            height: 40%;
+            width: 33%
+        }
+
+        #predators {
+            color: gold;
+            font-style: italic;
+            background-color: #07295A;
+            width: 33%;
+            height: 20%;
+        }
+
+        .nested {
+            margin: 50px, 0px, 30px, 30px;
+            padding: none;
+            font-weight: bold;
+            text-align: left;
+            border: .15em double black;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <script language="javascript" type="text/javascript">
+        document.write("<h4>Last Modified on: " + document.lastModified + "</h4>");
+    </script>
+
+    <table id="table">
+        <tr>
+            <th id="titansrock" colspan="3">
+                <h1>Titans Rock</h1>
+            </th>
+        </tr>
+
+        <tr>
+            <td id="bigblue" rowspan=2>
+                <h1>GO Big Blue <img src="small_tsu.png" style="margin: 50px 0px"></h1>
+            </td>
+
+            <td id="guitar">
+                <img src="small_acoustic_guitar.png">
+            </td>
+
+            <td id="vandy">
+                <div> <img src="small_vandy.png" style="margin: 50px 0px"> </div>
+
+                <table class="nested">
+                    <tr>
+                        <td>Vanderbilt</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>UT</td>
+                        <td>24</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2 id="predators">
+                <h2>Predator Power</h2>
+            </td>
+        </tr>
+
+    </table>
+
+
+</body>
+
+</html>

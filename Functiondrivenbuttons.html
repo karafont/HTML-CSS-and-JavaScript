@@ -1,0 +1,61 @@
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<!-- this web page has been created to meet the requirements of NSCC's CITC 1300 course -->
+<!-- Assignment -->
+<!-- File Name -->
+
+<head>
+	<title>Color Buttons</title>
+	<meta charset="utf-8">
+	<meta name= "author" content= "firstname lastname">
+	<meta name= "robots" content= "noindex, nofollow">	
+</head>	
+
+<body>
+
+<script language ="javascript" type="text/javascript">
+	document.write("<h4>Last Modified on: "+document.lastModified+"</h4>");
+
+    function chBackcolor(color) {
+    document.body.style.background = color;
+ }
+
+  function chColor(textcolor){
+     document.fgColor = textcolor;
+    }
+
+  function chTextAndBgcolor(bgcolor, fgColor) {
+      document.body.style.background = bgcolor;
+      document.fgColor = fgColor;
+    }
+ </script>
+<header><h1>Practicing JavaScript</h1></header>
+<main>
+   
+      <input type="button" value="Red" onclick="chBackcolor('red');"></input>
+      &nbsp;
+      <input type="button" value="Green" onclick="chBackcolor('green');"></input>
+      &nbsp;
+      <input type="button" value="Purple" onclick="chBackcolor('purple');"></input>
+      <br>
+      <br>
+      <input type="button" value="Blue Text" onclick="chColor('blue');"></input>
+      &nbsp;
+      <input type="button" value="Purple Text" onclick="chColor('violet');"></input>
+      &nbsp;
+      <input type="button" value="Orange Text" onclick="chColor('orange');"></input>
+      <br>
+      <br>
+      <input type="button" value="Red Background, Blue Text" onclick="chTextAndBgcolor('crimson', 'blue');"></input>
+      &nbsp;
+      <input type="button" value="Violet Background, Green Text" onclick="chTextAndBgcolor('violet', 'green');"></input>
+    
+</main>
+
+<footer> </footer>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+table {margin: auto;
+        border: 1px;
+        width: 600px;
+        font-family: arial, sans-serif}
+
+th {background-color: rgb(0, 41, 91);
+    color: #4095D1;}
+th > h1 {font-size: x-large;
+    font-variant: small-caps;}
+
+h1 {background-color: red;
+    color: #002B82}

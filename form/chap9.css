@@ -1,0 +1,30 @@
+main    {
+        font-family: "geneva";
+        line-height: 200%
+        }
+
+fieldset {
+        margin-right: 5px;
+        border: 1.5px dashed red;
+        width: 400px
+        }
+
+legend {
+        color: purple;
+        font-variant: small-caps;
+        font-weight: bold;
+        font-size: 1.25em
+        }
+
+label {
+        color: red;
+        font-variant: small-caps
+        }
+
+button {
+        font-family: "Comic Sans MS";
+        background-color: gold;
+        font-weight: bold;
+        color: purple
+        }
+
